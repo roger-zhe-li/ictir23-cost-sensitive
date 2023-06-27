@@ -1,7 +1,5 @@
 # ictir23-cost-sensitive
 
-# New Insights into Metric Optimization for Ranking-based Recommendation
-
 This is our implementation and experimental data for the paper:
 
 Roger Zhe Li, Julián Urbano, Alan Hanjalic (2023). Mitigating Mainstream Bias in Recommendation via Cost-sensitive Learning. In Proceedings of ICITR'23, Taipei, Taiwan, July 23, 2023.
