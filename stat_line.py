@@ -2,10 +2,10 @@ import numpy as np
 import pandas as pd 
 from plotnine import *
 
-file_1 = 'stat_movielens_vanilla_extended.csv'
-file_2 = 'stat_Musical_Instruments_vanilla_extended.csv'
-file_3 = 'stat_beer_vanilla_extended.csv'
-file_4 = 'stat_Digital_Music_vanilla_extended.csv'
+file_1 = './results_overall/stat_movielens_vanilla_extended.csv'
+file_2 = './results_overall/stat_Musical_Instruments_vanilla_extended.csv'
+file_3 = './results_overall/stat_beer_vanilla_extended.csv'
+file_4 = './results_overall/stat_Digital_Music_vanilla_extended.csv'
 
 df_1 = pd.read_csv(file_1, header=0, index_col=False)
 df_2 = pd.read_csv(file_2, header=0, index_col=False)
@@ -77,5 +77,5 @@ p = (
 			 
 	)
 
-p.save('corr_v3.pdf')
+p.save('corr.pdf')
 

@@ -39,7 +39,7 @@ seeds = [8964]
 
 df_new = pd.DataFrame()
 for dataset in ['movielens', 'beer', 'Digital_Music', 'Musical_Instruments']:
-	df = pd.read_csv(dataset+'_csl_with_sample_ratio_nov_v2.csv', header=0, index_col=None)
+	df = pd.read_csv('./results_overall/'+dataset+'_csl_with_sample_ratio.csv', header=0, index_col=None)
 	df = df[(df['seed'] == 8964) & (df['sample_ratio'] == 1.0) & (df['weight'] != '25x') & (df['weight'] != '35x') & (df['weight'] != '30x') & (df['weight'] != '40x') & (df['weight'] != '60x') & (df['weight'] != '70x')]
 
 	df['diff_nDCG'] = df['diff']
